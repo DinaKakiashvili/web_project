@@ -13,7 +13,7 @@
   "scripts": {
   
     
-  "start": "nodemon index.js",
+  "start": "npx nodemon index.js",
   
     
   "server": "nodemon index.js"
