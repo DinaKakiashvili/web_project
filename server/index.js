@@ -16,7 +16,7 @@ const app = express();
 dotenv.config({path: "./config.env"});
 app.use(express.json({limit: "20mb", extended: true}));
 app.use(express.urlencoded({limit: "20mb", extended: true}));
-app.use(cors());
+app.use(cors({origin: ("https://client-web-wlgu.onrender.com" || 'http://localhost:3000')}));
 app.use('/api/auth', authRoutes);
 app.use('/api/private', privateRoutes);
 

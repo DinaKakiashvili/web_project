@@ -17,7 +17,7 @@ const NotFound = () => (
         onClick={(e) => {
           e.preventDefault();
           window.location.href =
-            "http://localhost:3000/";
+            "https://client-web-wlgu.onrender.com";
         }}
       >
         Go Back

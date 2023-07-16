@@ -14,7 +14,7 @@ export default function Create() {
     });
 
     const createStudent = () => {
-        axios.post('http://localhost:5000/students', student).then( () => {
+        axios.post('https://w-server.onrender.com/students', student).then( () => {
           window.location.reload(false);
         })
     }
