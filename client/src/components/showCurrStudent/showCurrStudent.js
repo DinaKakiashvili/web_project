@@ -22,7 +22,7 @@ export default function ShowCurrStudent() {
     let currUser= value; //holds the name of the current online user
     console.log(currUser);
     const getCurrStudent = (studentName) => {
-    axios.get(`http://localhost:5000/students/${studentName}`).then((userGrades) => {
+    axios.get(`https://w-server.onrender.com/students/${studentName}`).then((userGrades) => {
       setGradesList(userGrades.data);
     })}
    

@@ -33,7 +33,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
             }
 
         try {
-            const {data} = await axios.get("/api/private", config);
+            const {data} = await axios.get("https://w-server.onrender.com/api/private", config);
             setPrivateData(data.data);
         } catch (error) {
             localStorage.removeItem("authToken");
