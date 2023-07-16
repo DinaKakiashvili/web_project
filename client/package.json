@@ -2,7 +2,7 @@
   
   "name": "client",
   "version": "0.1.0",
-  "proxy": "http://localhost:5000",
+  "proxy": "http://34.16.140.53:5000",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.7.1",
