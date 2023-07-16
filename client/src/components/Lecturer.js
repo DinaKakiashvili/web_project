@@ -31,7 +31,6 @@ import LogoutIcon from '@mui/icons-material/Logout';
                     Authorization: `Bearer ${localStorage.getItem("authToken")}`
                 }
             }
-
         try {
             const {data} = await axios.get("https://w-server.onrender.com/api/private", config);
             setPrivateData(data.data);
