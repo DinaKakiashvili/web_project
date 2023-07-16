@@ -19,9 +19,9 @@ app.use(express.urlencoded({limit: "20mb", extended: true}));
 app.use(cors({origin: ("https://client-web-wlgu.onrender.com" || 'http://localhost:3000')}));
 app.use('/api/auth', authRoutes);
 app.use('/api/private', privateRoutes);
-app.use((req, res, next) => {
-    res.sendFile(path.join(__dirname, 'react-app', 'build', 'index.html'));
-  });
+//app.use((req, res, next) => {
+   // res.sendFile(path.join(__dirname, 'react-app', 'build', 'index.html'));
+ // });
   
 
 //Error Handler (end of middleware)
